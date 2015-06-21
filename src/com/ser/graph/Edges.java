@@ -14,16 +14,25 @@ public class Edges {
     }
 
     public void set(int i, boolean value){
-        if(i >= 0 && i < edges.length){
+        if(edges != null && i >= 0 && i < edges.length){
             edges[i] = value;
         }
     }
 
-    public Boolean get(int i){
-        return i >= 0 && i < edges.length ? edges[i] : null;
+    public boolean get(int i){
+        if(edges == null || i < 0 || i >= edges.length) throw new ArrayIndexOutOfBoundsException();
+        return edges[i];
     }
 
     public int size(){
         return edges == null ? 0 : edges.length;
+    }
+
+    public Edges inverted(){
+        Edges edges = new Edges(this.edges.length);
+        for(int i = 0; i < edges.size(); i++){
+            edges.set(i, !this.edges[i]);
+        }
+        return edges;
     }
 }
