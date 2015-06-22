@@ -44,4 +44,21 @@ public class GraphTest {
         Graph graph = GraphReader.readGraph(graphFile);
         Assert.assertTrue(graph.checkSolution(graph.getSolution()));
     }
+
+    @Test
+    public void testAllSolution() throws IOException {
+        for(int i = 1; i <= 20; i++){
+            String num = String.valueOf(i);
+            while(num.length() < 3){
+                num = String.format("0%s", num);
+            }
+            String name = String.format("graph%s.txt", num);
+            Graph graph = GraphReader.readGraph(name);
+            boolean validSolution = graph.checkSolution(graph.getSolution());
+            if(!validSolution){
+                System.out.println(name);
+            }
+            Assert.assertTrue(validSolution);
+        }
+    }
 }

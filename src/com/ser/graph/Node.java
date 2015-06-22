@@ -18,6 +18,13 @@ public class Node {
         return vertex;
     }
 
+    public boolean getEdge(int index){
+        if(edge != null){
+            return edge.get(index);
+        }
+        return false;
+    }
+
     public Edges getInvertedEdges(){
         if(iEdge == null){
             iEdge = edge.inverted();

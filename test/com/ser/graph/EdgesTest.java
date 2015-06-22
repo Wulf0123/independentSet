@@ -114,4 +114,28 @@ public class EdgesTest {
         edge.set(5, true);
         Assert.assertEquals(2, edge.size());
     }
+
+    @Test
+    public void testAnd(){
+        Edges edge1 = new Edges(3);
+        Edges edge2 = new Edges(3);
+        Edges solution = new Edges(3);
+        edge1.set(0, true);
+        edge1.set(2, true);
+        edge2.set(1, true);
+
+        Assert.assertEquals(solution, edge1.and(edge2));
+    }
+
+    @Test
+    public void tesOr(){
+        Edges edge1 = new Edges(3);
+        Edges edge2 = new Edges(3);
+        Edges solution = new Edges(3);
+        edge1.set(0, true);
+        edge1.set(2, true);
+        edge2.set(1, true);
+
+        Assert.assertEquals(solution.inverted(), edge1.or(edge2));
+    }
 }
