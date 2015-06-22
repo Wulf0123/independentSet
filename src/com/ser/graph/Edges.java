@@ -5,7 +5,8 @@ package com.ser.graph;
  * on 6/21/2015.
  */
 public class Edges {
-    boolean[] edges;
+    private boolean[] edges;
+    private int size = -1;
 
     public Edges(int size){
         if(size >= 0) {
@@ -14,8 +15,8 @@ public class Edges {
     }
 
     public Edges(Edges edge){
-        this(edge.size());
-        for(int i = 0; i < edge.size(); i++){
+        this(edge.length());
+        for(int i = 0; i < edge.length(); i++){
             edges[i] = edge.get(i);
         }
     }
@@ -32,12 +33,40 @@ public class Edges {
     }
 
     public int size(){
+        if(size == -1) {
+            size = 0;
+            for (boolean edge : edges) {
+                if (edge) {
+                    size++;
+                }
+            }
+        }
+        return size;
+    }
+
+    public int length(){
         return edges == null ? 0 : edges.length;
+    }
+
+    public Edges and(Edges edge){
+        Edges result = new Edges(length());
+        for(int i = 0; i < length(); i++){
+            result.set(i, this.get(i) && edge.get(i));
+        }
+        return result;
+    }
+
+    public Edges or(Edges edge){
+        Edges result = new Edges(length());
+        for(int i = 0; i < length(); i++){
+            result.set(i, this.get(i) || edge.get(i));
+        }
+        return result;
     }
 
     public Edges inverted(){
         Edges edges = new Edges(this.edges.length);
-        for(int i = 0; i < edges.size(); i++){
+        for(int i = 0; i < edges.length(); i++){
             edges.set(i, !this.edges[i]);
         }
         return edges;

@@ -1,5 +1,6 @@
 package com.ser.graph;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -13,6 +14,8 @@ public class GraphReaderTest {
 
     @Test
     public void testGraphReader() throws IOException {
-        GraphReader.readGraph(graphFile);
+        Graph graph = GraphReader.readGraph(graphFile);
+        Assert.assertNotNull(graph);
+        Assert.assertEquals(4, graph.size());
     }
 }

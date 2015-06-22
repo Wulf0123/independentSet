@@ -17,20 +17,34 @@ public enum GraphReader {
         List<String> lines = Files.readAllLines(FileUtility.getPathForResource(fileName));
         Node[] nodes = null;
         Edges solution = null;
+        int i = 0;
+        int size = 0;
         for(String line : lines){
             if(nodes == null){
-                int size = parseSize(line);
+                size = parseSize(line);
                 solution = parseSolution(line);
                 nodes = new Node[size];
             } else{
-                
+                nodes[i] = parseNode(size, i, line);
+                i++;
             }
         }
         return new Graph(nodes, solution);
     }
 
-    private static Node parseNode(int size, String line){
-
+    private static Node parseNode(int size, int vertex, String line){
+        if(line != null && line.length() > 0){
+            String[] tokens = line.split("\\s+");
+            if(tokens.length > 1){
+                Edges edge = new Edges(size);
+                for(int i = 0; i < tokens.length; i++) {
+                    if(tokens[i].equals("1")) {
+                        edge.set(i, true);
+                    }
+                }
+                return new Node(vertex, edge);
+            }
+        }
         return null;
     }
 
@@ -51,11 +65,13 @@ public enum GraphReader {
             String[] tokens = line.split("\\s+");
             if(tokens.length > 1){
                 try{
-                    int size = Integer.parseInt(tokens[1]);
-                    if(tokens.length == size + 1){
+                    int size = Integer.parseInt(tokens[0]);
+                    int solutionSize = Integer.parseInt(tokens[1]);
+                    if(tokens.length == solutionSize + 2){
                         Edges solution = new Edges(size);
                         for(int i = 2; i < tokens.length; i++) {
-                            solution.set(i - 2, Boolean.parseBoolean(tokens[i]));
+                            int j = Integer.parseInt(tokens[i]);
+                            solution.set(j, true);
                         }
                         return solution;
                     }

@@ -16,13 +16,13 @@ public class EdgesTest {
     @Test
     public void testEdgesCreation(){
         Edges edge = new Edges(0);
-        Assert.assertEquals(0, edge.size());
+        Assert.assertEquals(0, edge.length());
     }
 
     @Test
     public void testEdgesBadCreation(){
         Edges edge = new Edges(-1);
-        Assert.assertEquals(0, edge.size());
+        Assert.assertEquals(0, edge.length());
     }
 
     @Test
@@ -60,7 +60,7 @@ public class EdgesTest {
     public void testInvert(){
         Edges edge = new Edges(1);
         Edges inverted = edge.inverted();
-        Assert.assertEquals(edge.size(), inverted.size());
+        Assert.assertEquals(edge.length(), inverted.length());
         Assert.assertFalse(edge.get(0));
         Assert.assertTrue(inverted.get(0));
     }
@@ -99,5 +99,19 @@ public class EdgesTest {
         Edges edge = new Edges(2);
         edge.set(1, true);
         Assert.assertEquals("0 1", edge.toString());
+    }
+
+    @Test
+    public void testSizeOne(){
+        Edges edge = new Edges(10);
+        Assert.assertEquals(0, edge.size());
+    }
+
+    @Test
+    public void testSizeTwo(){
+        Edges edge = new Edges(10);
+        edge.set(2, true);
+        edge.set(5, true);
+        Assert.assertEquals(2, edge.size());
     }
 }

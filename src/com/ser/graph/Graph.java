@@ -25,11 +25,16 @@ public class Graph {
         return solution;
     }
 
-    public void setSolution(Edges solution){
-        this.solution = solution;
+    public boolean checkSolution(Edges solution){
+        for(int i = 0; i < solution.length(); i++){
+            if(solution.get(i)){
+                
+            }
+        }
+        return false;
     }
 
-    public boolean checkSolution(Edges solution){
-        return false;
+    public int size(){
+        return nodes == null ? 0 : nodes.length;
     }
 }
