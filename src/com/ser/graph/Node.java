@@ -5,17 +5,34 @@ package com.ser.graph;
  * on 6/21/2015.
  */
 public class Node {
+    int vertex;
     Edges edge;
     Edges iEdge;
 
-    public Node(Edges edge){
+    public Node(int vertex, Edges edge){
+        this.vertex = vertex;
         this.edge = edge;
+    }
+
+    public int getVertex(){
+        return vertex;
     }
 
     public Edges getInvertedEdges(){
         if(iEdge == null){
-            edge.inverted();
+            iEdge = edge.inverted();
         }
         return iEdge;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(o instanceof Node){
+            Node node = (Node) o;
+            if(this.edge != null && node.edge != null) {
+                return this.vertex == node.vertex && this.edge.equals(node.edge);
+            }
+        }
+        return false;
     }
 }

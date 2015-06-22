@@ -64,4 +64,40 @@ public class EdgesTest {
         Assert.assertFalse(edge.get(0));
         Assert.assertTrue(inverted.get(0));
     }
+
+    @Test
+    public void testCopyConstructor(){
+        Edges edge = new Edges(1);
+        edge.set(0, true);
+        Edges edge2 = new Edges(edge);
+        Assert.assertEquals(edge, edge2);
+    }
+
+    @Test
+    public void testEquals(){
+        Edges edge = new Edges(1);
+        Edges edge2 = new Edges(1);
+        Assert.assertEquals(edge, edge2);
+    }
+
+    @Test
+    public void testNotEquals(){
+        Edges edge = new Edges(1);
+        Edges edge2 = new Edges(1);
+        edge2.set(0, true);
+        Assert.assertNotEquals(edge, edge2);
+    }
+
+    @Test
+    public void testToString(){
+        Edges edge = new Edges(0);
+        Assert.assertEquals("", edge.toString());
+    }
+
+    @Test
+    public void testToString2(){
+        Edges edge = new Edges(2);
+        edge.set(1, true);
+        Assert.assertEquals("0 1", edge.toString());
+    }
 }

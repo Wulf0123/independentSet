@@ -13,6 +13,13 @@ public class Edges {
         }
     }
 
+    public Edges(Edges edge){
+        this(edge.size());
+        for(int i = 0; i < edge.size(); i++){
+            edges[i] = edge.get(i);
+        }
+    }
+
     public void set(int i, boolean value){
         if(edges != null && i >= 0 && i < edges.length){
             edges[i] = value;
@@ -34,5 +41,36 @@ public class Edges {
             edges.set(i, !this.edges[i]);
         }
         return edges;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(o instanceof Edges && this.edges != null){
+            Edges edge = (Edges) o;
+            for(int i = 0; i < this.edges.length; i++){
+                if(this.edges[i] != edge.get(i)){
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public String toString(){
+        String string = "";
+        if(edges != null) {
+            for (int i = 0; i < edges.length; i++) {
+                String edge;
+                if(edges[i]){
+                    edge = "1";
+                } else{
+                    edge = "0";
+                }
+                string = String.format("%s%s ", string, edge);
+            }
+        }
+        return string.trim();
     }
 }
