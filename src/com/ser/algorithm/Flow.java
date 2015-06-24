@@ -18,7 +18,8 @@ public enum Flow {
     ;
     public static Edges solve(Graph graph){
         List<SolutionPair> initialPairs = findInitialNodes(graph);
-        return solve(graph, initialPairs, new Edges(graph.size()), new HashMap<String, Edges>());
+       // return solve(graph, initialPairs, new Edges(graph.size()), new HashMap<String, Edges>());
+        return solve(graph, initialPairs);
     }
 
     private static List<SolutionPair> findInitialNodes(Graph graph){
@@ -47,38 +48,36 @@ public enum Flow {
         return initialPairs;
     }
 
-    private static Edges solve(Graph graph, List<SolutionPair> edges, Edges solution, final Map<String, Edges> knownSolutions){
-        while(edges.size() > 0){
-            SolutionPair edge = edges.remove(0);
-            if(knownSolutions.containsKey(edge.toString())){
-                Edges currSolution = edge.getSolution().or(knownSolutions.get(edge.toString()));
-                if(currSolution.size() > solution.size()){
-                    solution = currSolution;
-                }
-            } else{
-                if(edge.getEdges().size() == 0){
-                    if(edge.getSolution().size() > solution.size()){
-                        solution = edge.getSolution();
-                    }
-                } else{
-                    List<SolutionPair> newPairs = new ArrayList<SolutionPair>();
-                    Edges currEdges = edge.getEdges();
-                    for(int i = 0; i < currEdges.length(); i++) {
-                        if (currEdges.get(i)) {
-                            Edges currEdge = graph.get(i).getInvertedEdges().and(currEdges);
-                            Edges currSolution = edge.getSolution();
-                            currSolution.set(i, true);
-                            newPairs.add(new SolutionPair(currEdge, currSolution));
-                        }
-                    }
-                    Edges maxSolution = solve(graph, newPairs, solution, knownSolutions);
-                    maxSolution = maxSolution.or(edge.getSolution());
-                    if(maxSolution.size() > solution.size()){
-                        solution = maxSolution;
-                    }
+    private static Edges solve(Graph graph, List<SolutionPair> solutions){
+        Edges solution = new Edges(graph.size());
+        while(solutions.size() > 0) {
+            SolutionPair current = solutions.remove(0);
+            Edges currentSolution = solve(graph, current);
+            if(currentSolution.size() > solution.size()){
+                solution = currentSolution;
+            }
+        }
+        return solution;
+    }
+
+    private static Edges solve(Graph graph, SolutionPair currentNode){
+        Edges solution = currentNode.getSolution();
+
+        Edges thing = currentNode.getEdges();
+        for(int i = 0; i < thing.length(); i++){
+            if(thing.get(i)){
+                Edges thisSolution = new Edges(currentNode.getSolution());
+                thisSolution.set(i, true);
+                Edges thisThing = currentNode.getEdges().and(graph.get(i).getInvertedEdges());
+                thisThing.set(i, false);
+                SolutionPair nextPair = new SolutionPair(thisThing, thisSolution);
+                thisSolution = solve(graph, nextPair);
+                if(thisSolution.size() > solution.size()){
+                    solution = thisSolution;
                 }
             }
         }
+
         return solution;
     }
 }

@@ -26,6 +26,10 @@ public class SolutionPair {
         return solution;
     }
 
+    public int size(){
+        return edges.size() + solution.size();
+    }
+
     @Override
     public String toString(){
         return edges.toString();

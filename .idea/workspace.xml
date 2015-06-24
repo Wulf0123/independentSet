@@ -36,13 +36,13 @@
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ser/graph/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="731">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="731">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Graph#0" expanded="false" />
                 <element signature="method#Graph#1;class#Graph#0" expanded="false" />
-                <element signature="e#361#362#0" expanded="true" />
                 <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
                 <element signature="e#1044#1045#0" expanded="true" />
               </folding>
             </state>
@@ -52,8 +52,8 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ser/graph/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="901">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#470#471#0" expanded="true" />
                 <element signature="e#497#498#0" expanded="true" />
@@ -78,22 +78,41 @@
       <file leaf-file-name="Flow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/Flow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6896553" vertical-offset="821" max-vertical-offset="1513">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.310345" vertical-offset="148" max-vertical-offset="646">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1023#1037#0" expanded="true" />
-                <element signature="e#2328#2342#0" expanded="true" />
+                <element signature="docComment;class#Flow#0" expanded="false" />
+                <element signature="method#solve#0;class#Flow#0" expanded="false" />
+                <element signature="method#findInitialNodes#0;class#Flow#0" expanded="false" />
+                <element signature="method#findInitialNode#0;class#Flow#0" expanded="false" />
+                <element signature="method#solve#1;class#Flow#0" expanded="false" />
+                <element signature="method#solve#2;class#Flow#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SolutionPair.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SolutionPair.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/com/ser/algorithm/helper/SolutionPair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="714">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.55893534" vertical-offset="165" max-vertical-offset="816">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlowTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/ser/algorithm/FlowTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2789" max-vertical-offset="3434">
+              <caret line="193" column="51" selection-start-line="193" selection-start-column="51" selection-end-line="193" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlowTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/ser/algorithm/FlowTest.java">
+      <file leaf-file-name="GraphReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ser/graph/GraphReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90304184" vertical-offset="205" max-vertical-offset="833">
-              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1547">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,9 +170,9 @@
         <option value="$PROJECT_DIR$/src/com/ser/graph/Edges.java" />
         <option value="$PROJECT_DIR$/test/com/ser/algorithm/helper/SolutionPairTest.java" />
         <option value="$PROJECT_DIR$/src/com/ser/graph/Node.java" />
-        <option value="$PROJECT_DIR$/src/com/ser/algorithm/com/ser/algorithm/helper/SolutionPair.java" />
-        <option value="$PROJECT_DIR$/src/com/ser/algorithm/Flow.java" />
         <option value="$PROJECT_DIR$/test/com/ser/algorithm/FlowTest.java" />
+        <option value="$PROJECT_DIR$/src/com/ser/algorithm/Flow.java" />
+        <option value="$PROJECT_DIR$/src/com/ser/algorithm/com/ser/algorithm/helper/SolutionPair.java" />
       </list>
     </option>
   </component>
@@ -828,13 +847,13 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/com/ser/algorithm/FlowTest.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/src/com/ser/algorithm/Flow.java</url>
+          <line>21</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -850,8 +869,8 @@
           <folding>
             <element signature="docComment;class#Graph#0" expanded="false" />
             <element signature="method#Graph#1;class#Graph#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="true" />
             <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
             <element signature="e#1044#1045#0" expanded="true" />
           </folding>
         </state>
@@ -1088,16 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ser/graph/GraphReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="896" max-vertical-offset="1547">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Exception.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70912546" vertical-offset="1089" max-vertical-offset="1683">
@@ -1164,18 +1173,7 @@
         <state vertical-scroll-proportion="0.716141" vertical-offset="328" max-vertical-offset="867">
           <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ser/graph/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1185,20 +1183,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ser/graph/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="731">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Graph#0" expanded="false" />
-            <element signature="method#Graph#1;class#Graph#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1213,16 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/com/ser/algorithm/helper/SolutionPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="714">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graphs/graph002.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="539">
@@ -1231,24 +1205,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/Flow.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ser/graph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6896553" vertical-offset="821" max-vertical-offset="1513">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="731">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Graph#0" expanded="false" />
+            <element signature="method#Graph#1;class#Graph#0" expanded="false" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ser/graph/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="901">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ser/graph/GraphReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1547">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1023#1037#0" expanded="true" />
-            <element signature="e#2328#2342#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/ser/algorithm/FlowTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90304184" vertical-offset="205" max-vertical-offset="833">
-          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2789" max-vertical-offset="3434">
+          <caret line="193" column="51" selection-start-line="193" selection-start-column="51" selection-end-line="193" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/Flow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.310345" vertical-offset="148" max-vertical-offset="646">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Flow#0" expanded="false" />
+            <element signature="method#solve#0;class#Flow#0" expanded="false" />
+            <element signature="method#findInitialNodes#0;class#Flow#0" expanded="false" />
+            <element signature="method#findInitialNode#0;class#Flow#0" expanded="false" />
+            <element signature="method#solve#1;class#Flow#0" expanded="false" />
+            <element signature="method#solve#2;class#Flow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/com/ser/algorithm/helper/SolutionPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55893534" vertical-offset="165" max-vertical-offset="816">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
           </folding>
         </state>
       </provider>
