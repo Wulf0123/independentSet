@@ -24,6 +24,7 @@ public class Edges {
     public void set(int i, boolean value){
         if(edges != null && i >= 0 && i < edges.length){
             edges[i] = value;
+            size = -1;
         }
     }
 
@@ -90,11 +91,11 @@ public class Edges {
     public String toString(){
         String string = "";
         if(edges != null) {
-            for (int i = 0; i < edges.length; i++) {
+            for (boolean edge1 : edges) {
                 String edge;
-                if(edges[i]){
+                if (edge1) {
                     edge = "1";
-                } else{
+                } else {
                     edge = "0";
                 }
                 string = String.format("%s%s ", string, edge);

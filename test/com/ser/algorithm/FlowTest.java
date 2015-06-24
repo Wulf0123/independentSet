@@ -19,6 +19,7 @@ public class FlowTest {
         Graph graph = GraphReader.readGraph("graph001.txt");
         Edges solution = Flow.solve(graph);
         Assert.assertEquals(solution.size(), graph.getSolution().size());
+        Assert.assertTrue(graph.checkSolution(solution));
     }
 
     @Test
@@ -26,5 +27,6 @@ public class FlowTest {
         Graph graph = GraphReader.readGraph("graph002.txt");
         Edges solution = Flow.solve(graph);
         Assert.assertEquals(solution.size(), graph.getSolution().size());
+        Assert.assertTrue(graph.checkSolution(solution));
     }
 }

@@ -5,7 +5,9 @@ import com.ser.graph.Graph;
 import com.ser.graph.Node;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Bradley
@@ -34,13 +36,15 @@ public enum Flow {
             }
         }
         if(children.size() > 0){
-            solution = solve(graph, solution, children);
+            solution = solve(graph, solution, children, new HashMap<String, Boolean>());
         }
         return solution;
     }
 
-    private static Edges solve(Graph graph, Edges solution, List<Edges> edges){
+    private static Edges solve(Graph graph, Edges solution, List<Edges> edges, Map<String, Boolean> seenEdges){
         while(edges.size() > 0){
+            //Grab top edge
+            //Create new solution from current solution
             Edges edge = edges.remove(0);
             for(int i = 0; i < graph.size(); i++){
                 if(edge.get(i)){
@@ -60,7 +64,6 @@ public enum Flow {
                 }
             }
         }
-
         return solution;
     }
 
