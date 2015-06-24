@@ -25,6 +25,10 @@ public class Node {
         return false;
     }
 
+    public Edges getEdges(){
+        return edge;
+    }
+
     public Edges getInvertedEdges(){
         if(iEdge == null){
             iEdge = edge.inverted();

@@ -26,6 +26,11 @@ public class SolutionPair {
         return solution;
     }
 
+    @Override
+    public String toString(){
+        return edges.toString();
+    }
+
     public static class SolutionPairComparator implements Comparator<SolutionPair> {
         @Override
         public int compare(SolutionPair pair1, SolutionPair pair2) {

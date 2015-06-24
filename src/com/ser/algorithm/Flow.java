@@ -1,5 +1,6 @@
 package com.ser.algorithm;
 
+import com.ser.algorithm.com.ser.algorithm.helper.SolutionPair;
 import com.ser.graph.Edges;
 import com.ser.graph.Graph;
 import com.ser.graph.Node;
@@ -16,58 +17,68 @@ import java.util.Map;
 public enum Flow {
     ;
     public static Edges solve(Graph graph){
-        Node start = findFirstNode(graph);
-        Edges solution = new Edges(graph.size());
-        return solve(graph, start, solution);
+        List<SolutionPair> initialPairs = findInitialNodes(graph);
+        return solve(graph, initialPairs, new Edges(graph.size()), new HashMap<String, Edges>());
     }
 
-    private static Edges solve(Graph graph, Node node, Edges solution){
-        solution.set(node.getVertex(), true);
-        List<Edges> children = new ArrayList<Edges>();
-        Edges edges = new Edges(node.getInvertedEdges());
-        edges.set(node.getVertex(), false);
-        if(edges.size() > solution.size()) {
-            for (int i = 0; i < graph.size(); i++) {
-                if (edges.get(i)) {
-                    Edges childrenEdges = graph.get(i).getInvertedEdges();
-                    children.add(edges.and(childrenEdges));
-                    edges.set(i, false);
-                }
+    private static List<SolutionPair> findInitialNodes(Graph graph){
+        Node initialNode = findInitialNode(graph);
+        return findInitialPairs(initialNode, graph);
+    }
+
+    private static Node findInitialNode(Graph graph){
+        //TODO change to pick Node with smallest edge
+        return graph.get(0);
+    }
+
+    private static List<SolutionPair> findInitialPairs(Node node, Graph graph){
+        List<SolutionPair> initialPairs = new ArrayList<SolutionPair>();
+        Edges edges = node.getEdges();
+        for(int i = 0; i < edges.length(); i++){
+            if(edges.get(i)){
+                Node currNode = graph.get(i);
+                Edges currEdge = currNode.getInvertedEdges();
+                Edges solution = new Edges(graph.size());
+                currEdge.set(i, false);
+                solution.set(i, true);
+                initialPairs.add(new SolutionPair(currEdge, solution));
             }
         }
-        if(children.size() > 0){
-            solution = solve(graph, solution, children, new HashMap<String, Boolean>());
-        }
-        return solution;
+        return initialPairs;
     }
 
-    private static Edges solve(Graph graph, Edges solution, List<Edges> edges, Map<String, Boolean> seenEdges){
+    private static Edges solve(Graph graph, List<SolutionPair> edges, Edges solution, final Map<String, Edges> knownSolutions){
         while(edges.size() > 0){
-            //Grab top edge
-            //Create new solution from current solution
-            Edges edge = edges.remove(0);
-            for(int i = 0; i < graph.size(); i++){
-                if(edge.get(i)){
-                    Node node = graph.get(i);
-                    List<Edges> children = new ArrayList<Edges>();
-                    Edges nodeEdges = edge.and(node.getInvertedEdges());
-                    if(nodeEdges.size() > solution.size()) {
-                        for (int j = 0; j < graph.size(); j++) {
-                            if (nodeEdges.get(j)) {
-                                solution.set(j, true);
-                                nodeEdges.set(j, false);
-                                children.add(nodeEdges.and(nodeEdges));
-                            }
+            SolutionPair edge = edges.remove(0);
+            if(knownSolutions.containsKey(edge.toString())){
+                Edges currSolution = edge.getSolution().or(knownSolutions.get(edge.toString()));
+                if(currSolution.size() > solution.size()){
+                    solution = currSolution;
+                }
+            } else{
+                if(edge.getEdges().size() == 0){
+                    if(edge.getSolution().size() > solution.size()){
+                        solution = edge.getSolution();
+                    }
+                } else{
+                    List<SolutionPair> newPairs = new ArrayList<SolutionPair>();
+                    Edges currEdges = edge.getEdges();
+                    for(int i = 0; i < currEdges.length(); i++) {
+                        if (currEdges.get(i)) {
+                            Edges currEdge = graph.get(i).getInvertedEdges().and(currEdges);
+                            Edges currSolution = edge.getSolution();
+                            currSolution.set(i, true);
+                            newPairs.add(new SolutionPair(currEdge, currSolution));
                         }
                     }
-                    edges.addAll(children);
+                    Edges maxSolution = solve(graph, newPairs, solution, knownSolutions);
+                    maxSolution = maxSolution.or(edge.getSolution());
+                    if(maxSolution.size() > solution.size()){
+                        solution = maxSolution;
+                    }
                 }
             }
         }
         return solution;
-    }
-
-    private static Node findFirstNode(Graph graph){
-        return graph.get(0); //TODO find the node with the smallest edges
     }
 }
