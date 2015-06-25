@@ -1,5 +1,6 @@
 package com.ser.algorithm.com.ser.algorithm.helper;
 
+import com.ser.graph.BooleanEdges;
 import com.ser.graph.Edges;
 
 import java.util.Comparator;

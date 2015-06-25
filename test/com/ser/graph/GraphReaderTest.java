@@ -14,7 +14,7 @@ public class GraphReaderTest {
 
     @Test
     public void testGraphReader() throws IOException {
-        Graph graph = GraphReader.readGraph(graphFile);
+        Graph graph = GraphReader.readGraph(graphFile, new BooleanEdges.BooleanReader());
         Assert.assertNotNull(graph);
         Assert.assertEquals(4, graph.size());
     }

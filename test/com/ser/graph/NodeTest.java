@@ -10,7 +10,7 @@ import org.junit.Test;
 public class NodeTest {
     @Test
     public void testNodeCreation(){
-        Edges edge = new Edges(1);
+        BooleanEdges edge = new BooleanEdges(1);
         Node node = new Node(0, edge);
         Assert.assertEquals(0, node.getVertex());
         Assert.assertEquals(edge.get(0), !node.getInvertedEdges().get(0));

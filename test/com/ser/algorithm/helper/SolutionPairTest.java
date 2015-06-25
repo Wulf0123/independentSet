@@ -1,6 +1,7 @@
 package com.ser.algorithm.helper;
 
 import com.ser.algorithm.com.ser.algorithm.helper.SolutionPair;
+import com.ser.graph.BooleanEdges;
 import com.ser.graph.Edges;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -20,7 +21,7 @@ public class SolutionPairTest {
 
     @BeforeClass
     public static void setup(){
-        edges = new Edges(3);
+        edges = new BooleanEdges(3);
         edges.set(1, true);
         edges.set(2, true);
         solution = edges.inverted();

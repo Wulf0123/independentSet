@@ -13,7 +13,7 @@ import java.util.List;
 public enum GraphReader {
     ;
 
-    public static Graph readGraph(String fileName) throws IOException {
+    public static Graph readGraph(String fileName, Edges.Reader reader) throws IOException {
         List<String> lines = Files.readAllLines(FileUtility.getPathForResource(fileName));
         Node[] nodes = null;
         Edges solution = null;
@@ -22,26 +22,21 @@ public enum GraphReader {
         for(String line : lines){
             if(nodes == null){
                 size = parseSize(line);
-                solution = parseSolution(line);
+                solution = parseSolution(line, reader);
                 nodes = new Node[size];
             } else{
-                nodes[i] = parseNode(size, i, line);
+                nodes[i] = parseNode(size, i, line, reader);
                 i++;
             }
         }
         return new Graph(nodes, solution);
     }
 
-    private static Node parseNode(int size, int vertex, String line){
+    private static Node parseNode(int size, int vertex, String line, Edges.Reader reader){
         if(line != null && line.length() > 0){
             String[] tokens = line.split("\\s+");
             if(tokens.length > 1){
-                Edges edge = new Edges(size);
-                for(int i = 0; i < tokens.length; i++) {
-                    if(tokens[i].equals("1")) {
-                        edge.set(i, true);
-                    }
-                }
+                Edges edge = reader.parse(tokens, 0, size);
                 return new Node(vertex, edge);
             }
         }
@@ -60,7 +55,7 @@ public enum GraphReader {
         return 0;
     }
 
-    private static Edges parseSolution(String line){
+    private static Edges parseSolution(String line, Edges.Reader reader){
         if(line != null && line.length() > 0){
             String[] tokens = line.split("\\s+");
             if(tokens.length > 1){
@@ -68,12 +63,7 @@ public enum GraphReader {
                     int size = Integer.parseInt(tokens[0]);
                     int solutionSize = Integer.parseInt(tokens[1]);
                     if(tokens.length == solutionSize + 2){
-                        Edges solution = new Edges(size);
-                        for(int i = 2; i < tokens.length; i++) {
-                            int j = Integer.parseInt(tokens[i]);
-                            solution.set(j, true);
-                        }
-                        return solution;
+                        return reader.parse(tokens, 2, size);
                     }
                 } catch(Exception e){
                     //TODO log this
