@@ -64,31 +64,6 @@ public enum Flow {
         return solution;
     }
 
-    private static Edges solve(Graph graph, SolutionPair currentNode){
-        Edges solution = currentNode.getSolution();
-
-        Edges thing = currentNode.getEdges();
-        for(int i = 0; i < thing.length(); i++){
-            if(thing.get(i)){
-                Edges thisSolution = new BooleanEdges(currentNode.getSolution());
-                thisSolution.set(i, true);
-                Edges thisThing = currentNode.getEdges().and(graph.get(i).getInvertedEdges());
-                thisThing.set(i, false);
-                SolutionPair nextPair = new SolutionPair(thisThing, thisSolution);
-                if(nextPair.size() > solution.size()) {
-                    thisSolution = solve(graph, nextPair);
-
-                    if (thisSolution.size() > solution.size()) {
-                        solution = thisSolution;
-                        System.out.println(String.format(" - current solution: %s %s" , solution.size(), thisSolution.size()));
-                    }
-                }
-            }
-        }
-
-        return solution;
-    }
-
     private static Edges solve(Graph graph, Edges currentEdges, Map<String, Edges> knownSolutions){
         Edges solution = new BooleanEdges(graph.size());
         if(currentEdges.size() > 0){

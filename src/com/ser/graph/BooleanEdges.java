@@ -117,8 +117,14 @@ public class BooleanEdges implements Edges {
         public Edges parse(String[] tokens, int start, int size) {
             Edges solution = new BooleanEdges(size);
             for(int i = start; i < tokens.length; i++) {
-                int j = Integer.parseInt(tokens[i]);
-                solution.set(j, true);
+                if(start != 0) {
+                    int j = Integer.parseInt(tokens[i]);
+                    solution.set(j, true);
+                } else{
+                    if(tokens[i].equals("1")){
+                        solution.set(i, true);
+                    }
+                }
             }
             return solution;
         }
