@@ -9,7 +9,7 @@ public class NumericEdges implements Edges {
     private int[] edges;
 
     public NumericEdges(int size) {
-        size = 0;
+        this.size = 0;
         edges = new int[size];
     }
 
@@ -154,7 +154,7 @@ public class NumericEdges implements Edges {
 
     @Override
     public int length() {
-        return 0;
+        return edges.length;
     }
 
     @Override
@@ -174,5 +174,12 @@ public class NumericEdges implements Edges {
             EdgeString += (i + " ");
         }
         return EdgeString;
+    }
+
+    public void increment(int index) {
+        if(edges[index] == 0){
+            size++;
+        }
+        edges[index]++;
     }
 }

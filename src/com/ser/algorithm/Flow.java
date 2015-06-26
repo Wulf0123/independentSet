@@ -40,7 +40,7 @@ public enum Flow {
         List<SolutionPair> initialPairs = new ArrayList<SolutionPair>();
         Edges edges = node.getEdges();
         for(int i = 0; i < edges.length(); i++){
-            if((Boolean)edges.get(i) || i == node.getVertex()){
+            if(edges.get(i) || i == node.getVertex()){
                 Node currNode = graph.get(i);
                 Edges currEdge = currNode.getInvertedEdges();
                 Edges solution = new BooleanEdges(graph.size());
@@ -68,7 +68,7 @@ public enum Flow {
         Edges solution = new BooleanEdges(graph.size());
         if(currentEdges.size() > 0){
             for(int i = 0; i < currentEdges.length(); i++){
-                if((Boolean)currentEdges.get(i)){
+                if(currentEdges.get(i)){
                     Edges thisSolution;
                     Edges nextEdges = graph.get(i).getInvertedEdges();
                     nextEdges = nextEdges.and(currentEdges);
