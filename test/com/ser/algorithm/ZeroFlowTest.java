@@ -4,8 +4,8 @@ import com.ser.graph.BooleanEdges;
 import com.ser.graph.Edges;
 import com.ser.graph.Graph;
 import com.ser.graph.GraphReader;
-import org.junit.Assert;
-import org.junit.Test;
+import com.ser.time.StopWatch;
+import org.junit.*;
 
 import java.io.IOException;
 
@@ -15,6 +15,17 @@ import java.io.IOException;
  */
 public class ZeroFlowTest {
     Edges.Reader edgesReader = new BooleanEdges.BooleanReader();
+    private static StopWatch stopWatch = new StopWatch();
+
+    @BeforeClass
+    public static void setup(){
+        stopWatch.start();
+    }
+
+    @AfterClass
+    public static void teardown(){
+        System.out.println(String.format("Tests took: %s s", (double)stopWatch.elapsedTime()/1000));
+    }
 
     @Test
     public void testGraph001() throws IOException {

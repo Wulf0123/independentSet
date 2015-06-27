@@ -1,6 +1,5 @@
 package com.ser.algorithm;
 
-import com.ser.algorithm.com.ser.algorithm.helper.SolutionPair;
 import com.ser.graph.*;
 
 import java.util.ArrayList;
@@ -54,22 +53,7 @@ public enum ZeroFlow {
     }
 
     private static Edges solve(Graph graph, Edges currEdges){
-        NumericEdges flow = new NumericEdges(graph.size());
-        for(int i = 0; i < currEdges.length(); i++){
-            if(currEdges.get(i)){
-                Node currNode = graph.get(i);
-                Edges nodeEdges = currNode.getEdges().and(currEdges);
-                for(int j = 0; j < currEdges.length(); j++){
-                    if(currEdges.get(j) && nodeEdges.get(j)){
-                        flow.increment(j);
-                    }
-                    if(!currEdges.get(j)){
-                        flow.set(j);
-                        flow.negate(j);
-                    }
-                }
-            }
-        }
+        NumericEdges flow = findFlow(graph, currEdges);
         if(flow.size() == 0){
             return currEdges;
         } else{
@@ -81,26 +65,50 @@ public enum ZeroFlow {
         int largestValue = flow.getInteger(0);
         for(int i = 1; i < flow.length(); i++){
             int currentValue = flow.getInteger(i);
-            if(currentValue >= 0 && currentValue < largestValue || largestValue == -1){
+            if(currentValue >= 0 && currentValue > largestValue || largestValue == -1){
                 largestValue = currentValue;
             }
         }
 
-        Edges solution = new BooleanEdges(graph.size());
+        List<Node> nodes = new ArrayList<Node>();
         for(int i = 0; i < flow.length(); i++){
             if(flow.getInteger(i) == largestValue){
-                Edges nextEdges = new BooleanEdges(currEdges);
-                nextEdges.set(i, false);
-                nextEdges = nextEdges.and(graph.get(i).getInvertedEdges());
-//                Edges nextSolution = solve(graph, nextEdges);
-//                if(nextSolution.size() > solution.size()){
-//                    solution = nextSolution;
-//                }
-                solution = solve(graph, nextEdges);
-                solution.set(i, true);
-                return solution;
+                nodes.add(graph.get(i));
             }
         }
-        return solution;
+        int nextIndex = find(graph, nodes, currEdges);
+        currEdges.set(nextIndex, false);
+
+        return solve(graph, currEdges);
+    }
+
+    private static int find(Graph graph, List<Node> nodes, Edges currEdges){
+        int vertex = -1;
+        int size = -1;
+        for(Node node : nodes){
+            Edges edge = node.getInvertedEdges().and(currEdges);
+            int flowSize = findFlow(graph, edge).size();
+            if(flowSize > size){
+                size = flowSize;
+                vertex = node.getVertex();
+            }
+        }
+        return vertex;
+    }
+
+    private static NumericEdges findFlow(Graph graph, Edges currEdges){
+        NumericEdges flow = new NumericEdges(graph.size());
+        for(int i = 0; i < currEdges.length(); i++){
+            if(currEdges.get(i)){
+                Node currNode = graph.get(i);
+                Edges nodeEdges = currNode.getEdges().and(currEdges);
+                for(int j = 0; j < currEdges.length(); j++){
+                    if(currEdges.get(j) && nodeEdges.get(j)){
+                        flow.increment(j);
+                    }
+                }
+            }
+        }
+        return flow;
     }
 }
