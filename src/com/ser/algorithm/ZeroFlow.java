@@ -88,7 +88,7 @@ public enum ZeroFlow {
         for(Node node : nodes){
             Edges edge = node.getInvertedEdges().and(currEdges);
             int flowSize = findFlow(graph, edge).size();
-            if(flowSize > size){
+            if(flowSize >= size){
                 size = flowSize;
                 vertex = node.getVertex();
             }

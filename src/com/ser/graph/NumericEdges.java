@@ -57,14 +57,20 @@ public class NumericEdges implements Edges {
     public Edges and(Edges toAnd) {
         NumericEdges andEdges = new NumericEdges(this.edges.length);
         for (int i = 0; i < edges.length; i++) {
-            if (this.edges[i] == 0 || ((NumericEdges)toAnd).getInteger(i) == 0) {
-                andEdges.zero(i);
-            } else if (this.edges[i] < 0 || ((NumericEdges)toAnd).edges[i] < 0) {
-                andEdges.negate(i);
-            } else {
-                if (this.edges[i] > ((NumericEdges)toAnd).edges[i]) {
-                    andEdges.set(i);
+            if(toAnd instanceof NumericEdges) {
+                if (this.edges[i] == 0 || ((NumericEdges) toAnd).getInteger(i) == 0) {
+                    andEdges.zero(i);
+                } else if (this.edges[i] < 0 || ((NumericEdges) toAnd).edges[i] < 0) {
+                    andEdges.negate(i);
                 } else {
+                    if (this.edges[i] > ((NumericEdges) toAnd).edges[i]) {
+                        andEdges.set(i);
+                    } else {
+                        andEdges.set(i);
+                    }
+                }
+            } else{
+                if(this.edges[i] > 0 && toAnd.get(i)){
                     andEdges.set(i);
                 }
             }
@@ -76,16 +82,36 @@ public class NumericEdges implements Edges {
         NumericEdges Summation = new NumericEdges(this.edges.length);
         for (int i = 0; i < this.edges.length; i++) {
             int leftEdge = this.edges[i];
-            int rightEdge = ((NumericEdges)toAdd).edges[i];
+            int rightEdge;
+            if(toAdd instanceof NumericEdges){
+                rightEdge = ((NumericEdges)toAdd).edges[i];
+            } else{
+                rightEdge = toAdd.get(i) ? 1 : 0;
+            }
             if (this.edges[i] == 0) {
                 Summation.zero(i);
             } else if (leftEdge < 0 || rightEdge < 0) {
                 Summation.negate(i);
             } else {
-                Summation.edges[i] = leftEdge + rightEdge;
+                Summation.setInteger(i, leftEdge + rightEdge);
             }
         }
         return Summation;
+    }
+
+    private void setInteger(int index, int value) {
+        if(index < edges.length){
+            if(value == 0){
+                if(edges[index] > 0){
+                    size--;
+                }
+            }else {
+                if (edges[index] == 0) {
+                    size++;
+                }
+            }
+            edges[index] = value;
+        }
     }
 
     public int getInteger(int edge) {
@@ -181,5 +207,12 @@ public class NumericEdges implements Edges {
             size++;
         }
         edges[index]++;
+    }
+
+    public void decrement(int index) {
+        if(edges[index] == 1){
+            size--;
+        }
+        edges[index]--;
     }
 }
