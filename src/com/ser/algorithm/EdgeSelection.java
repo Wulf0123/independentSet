@@ -15,6 +15,7 @@ public enum EdgeSelection {
     ;
 
     public static Edges solve(Graph graph){
+        Edges sol = new BooleanEdges(graph.size());
         List<Edges> solutionSet = new ArrayList<Edges>();
         solutionSet.add(new BooleanEdges(graph.size()).inverted());
         for(int i = 0; i < graph.size(); i++){
@@ -26,8 +27,20 @@ public enum EdgeSelection {
                         Edges right = new BooleanEdges(solution);
                         left.set(i, false);
                         right.set(j, false);
-                        nextSolutionSet.add(left);
-                        nextSolutionSet.add(right);
+                        if(graph.checkSolution(left)){
+                            if(left.size() > sol.size()){
+                                sol = left;
+                            }
+                        }else {
+                            nextSolutionSet.add(left);
+                        }
+                        if(graph.checkSolution(right)){
+                            if(right.size() > sol.size()){
+                                sol = right;
+                            }
+                        }else {
+                            nextSolutionSet.add(right);
+                        }
                     } else{
                         nextSolutionSet.add(solution);
                     }
@@ -35,7 +48,7 @@ public enum EdgeSelection {
                 solutionSet = nextSolutionSet;
             }
         }
-        return getSolution(solutionSet);
+        return sol;// getSolution(solutionSet);
     }
 
     private static Edges getSolution(List<Edges> solutionSet) {
