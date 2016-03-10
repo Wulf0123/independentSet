@@ -156,7 +156,7 @@ public class EdgeSelectionTest {
         System.out.println(String.format("Graph-013: %s", solution));
     }
 
-    @Ignore
+    //@Ignore
     @Test
     public void testGraph014() throws IOException {
         Graph graph = GraphReader.readGraph("graph014.txt", edgesReader);

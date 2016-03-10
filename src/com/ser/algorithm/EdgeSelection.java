@@ -16,17 +16,15 @@ public enum EdgeSelection {
 
     public static Edges solve(Graph graph){
         Edges sol = new BooleanEdges(graph.size());
-        List<Edges> solutionSet = new ArrayList<Edges>();
-        solutionSet.add(new BooleanEdges(graph.size()).inverted());
+        List<Edges> solutionSet = getInitialSolutionSet(graph);
         for(int i = 0; i < graph.size(); i++){
             for(int j = i + 1; j < graph.size(); j++){
                 List<Edges> nextSolutionSet = new ArrayList<Edges>();
                 for(Edges solution : solutionSet){
                     if(graph.get(i).getEdge(j)){
                         Edges left = new BooleanEdges(solution);
-                        Edges right = new BooleanEdges(solution);
                         left.set(i, false);
-                        right.set(j, false);
+                        solution.set(j, false);
                         if(graph.checkSolution(left)){
                             if(left.size() > sol.size()){
                                 sol = left;
@@ -34,12 +32,12 @@ public enum EdgeSelection {
                         }else if(left.size() > sol.size()){
                             nextSolutionSet.add(left);
                         }
-                        if(graph.checkSolution(right)){
-                            if(right.size() > sol.size()){
-                                sol = right;
+                        if(graph.checkSolution(solution)){
+                            if(solution.size() > sol.size()){
+                                sol = solution;
                             }
-                        }else if(right.size() > sol.size()){
-                            nextSolutionSet.add(right);
+                        }else if(solution.size() > sol.size()){
+                            nextSolutionSet.add(solution);
                         }
                     } else{
                         nextSolutionSet.add(solution);
@@ -49,6 +47,18 @@ public enum EdgeSelection {
             }
         }
         return sol;// getSolution(solutionSet);
+    }
+
+    private static List<Edges> getInitialSolutionSet(Graph graph) {
+        List<Edges> solutionSet = new ArrayList<Edges>();
+        solutionSet.add(graph.get(0).getInvertedEdges());
+        Edges initialEdges = graph.get(0).getEdges();
+        for(int i = 0; i < graph.size(); i++){
+            if(initialEdges.get(i)){
+                solutionSet.add(graph.get(i).getInvertedEdges());
+            }
+        }
+        return solutionSet;
     }
 
     private static Edges getSolution(List<Edges> solutionSet) {
