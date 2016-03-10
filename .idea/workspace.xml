@@ -43,8 +43,8 @@
       <file leaf-file-name="EdgeSelection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/EdgeSelection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6396124">
-              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.67958814">
+              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#393#400#0" expanded="true" />
@@ -68,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/test/com/ser/algorithm/EdgeSelectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+              <caret line="158" column="4" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -333,33 +333,7 @@
       <recent name="com.ser.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EdgeSelectionTest">
-    <configuration default="false" name="EdgeSelectionTest.testGraph022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ser.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="independentSet" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ser.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.EdgeSelectionTest" />
-      <option name="METHOD_NAME" value="testGraph022" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.EdgeSelectionTest.testGraph014">
     <configuration default="false" name="EdgeSelectionTest.testGraph021" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -451,6 +425,32 @@
       <option name="PACKAGE_NAME" value="com.ser.algorithm" />
       <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.EdgeSelectionTest" />
       <option name="METHOD_NAME" value="testGraph020" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="EdgeSelectionTest.testGraph014" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ser.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="independentSet" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ser.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.EdgeSelectionTest" />
+      <option name="METHOD_NAME" value="testGraph014" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -710,19 +710,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph022" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph021" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph009" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph020" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph021" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph009" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph020" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph014" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph020" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph009" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph021" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph022" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph014" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph020" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph009" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EdgeSelectionTest.testGraph021" />
       </list>
     </recent_temporary>
   </component>
@@ -746,20 +746,20 @@
     <history-entry file="EdgeSelectionTest - 2016.03.09 at 18h 08m 47s.xml">
       <configuration name="EdgeSelectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeSelectionTest_testGraph001 - 2016.03.09 at 18h 07m 15s.xml">
-      <configuration name="EdgeSelectionTest.testGraph001" configurationId="JUnit" />
+    <history-entry file="EdgeSelectionTest - 2016.03.09 at 18h 15m 07s.xml">
+      <configuration name="EdgeSelectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeSelectionTest_testGraph002 - 2016.03.09 at 18h 07m 10s.xml">
-      <configuration name="EdgeSelectionTest.testGraph002" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EdgeSelectionTest_testGraph003 - 2016.03.09 at 18h 07m 20s.xml">
-      <configuration name="EdgeSelectionTest.testGraph003" configurationId="JUnit" />
+    <history-entry file="EdgeSelectionTest - 2016.03.09 at 18h 15m 38s.xml">
+      <configuration name="EdgeSelectionTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EdgeSelectionTest_testGraph004 - 2016.03.09 at 18h 07m 26s.xml">
       <configuration name="EdgeSelectionTest.testGraph004" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EdgeSelectionTest_testGraph009 - 2016.03.09 at 18h 08m 27s.xml">
       <configuration name="EdgeSelectionTest.testGraph009" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EdgeSelectionTest_testGraph014 - 2016.03.09 at 18h 16m 45s.xml">
+      <configuration name="EdgeSelectionTest.testGraph014" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EdgeSelectionTest_testGraph020 - 2016.03.09 at 18h 09m 03s.xml">
       <configuration name="EdgeSelectionTest.testGraph020" configurationId="JUnit" />
@@ -1295,16 +1295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/ser/algorithm/EdgeSelectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ser/graph/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1313,10 +1303,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/ser/algorithm/EdgeSelectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="158" column="4" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/EdgeSelection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6396124">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.67958814">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#393#400#0" expanded="true" />

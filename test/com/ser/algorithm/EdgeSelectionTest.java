@@ -5,10 +5,7 @@ import com.ser.graph.Edges;
 import com.ser.graph.Graph;
 import com.ser.graph.GraphReader;
 import com.ser.time.StopWatch;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import java.io.IOException;
 
@@ -159,7 +156,7 @@ public class EdgeSelectionTest {
         System.out.println(String.format("Graph-013: %s", solution));
     }
 
-    //@Ignore
+    @Ignore
     @Test
     public void testGraph014() throws IOException {
         Graph graph = GraphReader.readGraph("graph014.txt", edgesReader);

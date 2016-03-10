@@ -31,14 +31,14 @@ public enum EdgeSelection {
                             if(left.size() > sol.size()){
                                 sol = left;
                             }
-                        }else {
+                        }else if(left.size() > sol.size()){
                             nextSolutionSet.add(left);
                         }
                         if(graph.checkSolution(right)){
                             if(right.size() > sol.size()){
                                 sol = right;
                             }
-                        }else {
+                        }else if(right.size() > sol.size()){
                             nextSolutionSet.add(right);
                         }
                     } else{
