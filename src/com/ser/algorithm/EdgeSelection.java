@@ -3,6 +3,7 @@ package com.ser.algorithm;
 import com.ser.graph.BooleanEdges;
 import com.ser.graph.Edges;
 import com.ser.graph.Graph;
+import com.ser.graph.Node;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,14 +52,25 @@ public enum EdgeSelection {
 
     private static List<Edges> getInitialSolutionSet(Graph graph) {
         List<Edges> solutionSet = new ArrayList<Edges>();
-        solutionSet.add(graph.get(0).getInvertedEdges());
-        Edges initialEdges = graph.get(0).getEdges();
+        Node initialNode = findLargestIndex(graph);
+        solutionSet.add(initialNode.getInvertedEdges());
+        Edges initialEdges = initialNode.getEdges();
         for(int i = 0; i < graph.size(); i++){
             if(initialEdges.get(i)){
                 solutionSet.add(graph.get(i).getInvertedEdges());
             }
         }
         return solutionSet;
+    }
+
+    private static Node findLargestIndex(Graph graph) {
+        Node node = graph.get(0);
+        for(int i = 1; i < graph.size(); i++){
+            if(graph.get(i).getEdges().size() > node.getEdges().size()){
+                node = graph.get(i);
+            }
+        }
+        return node;
     }
 
     private static Edges getSolution(List<Edges> solutionSet) {

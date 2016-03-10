@@ -43,11 +43,11 @@
       <file leaf-file-name="EdgeSelection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/EdgeSelection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8001211">
-              <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.6402181">
+              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1879#1886#0" expanded="true" />
+                <element signature="e#1906#1913#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -755,8 +755,8 @@
     <history-entry file="EdgeSelectionTest - 2016.03.09 at 21h 50m 34s.xml">
       <configuration name="EdgeSelectionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeSelectionTest_testGraph014 - 2016.03.09 at 18h 20m 47s.xml">
-      <configuration name="EdgeSelectionTest.testGraph014" configurationId="JUnit" />
+    <history-entry file="EdgeSelectionTest - 2016.03.09 at 21h 57m 14s.xml">
+      <configuration name="EdgeSelectionTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EdgeSelectionTest_testGraph014 - 2016.03.09 at 18h 35m 25s.xml">
       <configuration name="EdgeSelectionTest.testGraph014" configurationId="JUnit" />
@@ -799,7 +799,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31694916" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -808,7 +808,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922536" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5003383" sideWeight="0.49911818" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5003383" sideWeight="0.49911818" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3122463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1311,11 +1311,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ser/algorithm/EdgeSelection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8001211">
-          <caret line="57" column="65" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.6402181">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1879#1886#0" expanded="true" />
+            <element signature="e#1906#1913#0" expanded="true" />
           </folding>
         </state>
       </provider>
