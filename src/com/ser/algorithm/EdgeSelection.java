@@ -40,7 +40,7 @@ public enum EdgeSelection {
                         }else if(solution.size() > sol.size()){
                             nextSolutionSet.add(solution);
                         }
-                    } else{
+                    } else if(solution.size() > sol.size()){
                         nextSolutionSet.add(solution);
                     }
                 }
@@ -66,7 +66,7 @@ public enum EdgeSelection {
     private static Node findLargestIndex(Graph graph) {
         Node node = graph.get(0);
         for(int i = 1; i < graph.size(); i++){
-            if(graph.get(i).getEdges().size() > node.getEdges().size()){
+            if(graph.get(i).getEdges().size() < node.getEdges().size()){
                 node = graph.get(i);
             }
         }
