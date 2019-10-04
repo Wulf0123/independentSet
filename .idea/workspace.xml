@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="184c12b9-b2de-4605-a32a-732fee30836e" name="Default" comment="">
+    <list default="true" id="184c12b9-b2de-4605-a32a-732fee30836e" name="Default" comment="Well it works except&#10;19 - Had out of memory but printing out i have been able to get the right answer&#10;20 - i have only seen an answer of 23. But there are lots of combinations.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/ClosetNeighbor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/ClosetNeighbor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/EdgeSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/EdgeSet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClosestNeighborTest.testGraph019">
+  <component name="RunManager" selected="JUnit.ClosestNeighborTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -365,11 +367,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClosestNeighborTest" />
         <item itemvalue="JUnit.ClosestNeighborTest.testGraph019" />
         <item itemvalue="JUnit.ClosestNeighborTest.testGraph022" />
         <item itemvalue="JUnit.ClosestNeighborTest.testGraph021" />
         <item itemvalue="JUnit.ClosestNeighborTest.testGraph020" />
-        <item itemvalue="JUnit.ClosestNeighborTest" />
       </list>
     </recent_temporary>
   </component>
@@ -384,6 +386,14 @@
       <option name="presentableId" value="Default" />
       <updated>1434925853868</updated>
     </task>
+    <task id="LOCAL-00001" summary="Well it works except&#10;19 - Had out of memory but printing out i have been able to get the right answer&#10;20 - i have only seen an answer of 23. But there are lots of combinations.">
+      <created>1570154530593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570154530593</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -431,6 +441,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Well it works except&#10;19 - Had out of memory but printing out i have been able to get the right answer&#10;20 - i have only seen an answer of 23. But there are lots of combinations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Well it works except&#10;19 - Had out of memory but printing out i have been able to get the right answer&#10;20 - i have only seen an answer of 23. But there are lots of combinations." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -482,12 +494,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java</url>
-          <line>96</line>
+          <line>102</line>
           <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java</url>
-          <line>29</line>
+          <line>35</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>

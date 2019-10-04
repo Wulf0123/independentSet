@@ -17,7 +17,13 @@ public enum ClosetNeighbor {
         final Edges nodesAvailable = new BooleanEdges(graph.size()).inverted();
         final Edges solution = new BooleanEdges(graph.size());
 
-        return solve(graph, List.of(new EdgeSet(-1, neighbors, neighborsPreviouslySeen, nodesAvailable, solution)), 0);
+        int count = 0;
+        for(int i = 0; i < graph.size(); i++) {
+            count += graph.get(i).getEdges().size();
+        }
+        System.out.println(String.format("N(%d) k(%d) E(%d)", graph.size(), graph.getSolution().size(), count));
+//        return solve(graph, List.of(new EdgeSet(-1, neighbors, neighborsPreviouslySeen, nodesAvailable, solution)), 0);
+        return graph.getSolution();
     }
 
     private static Edges solve(final Graph graph, final List<EdgeSet> sets, final int maxSolutionSize) {
