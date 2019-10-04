@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="184c12b9-b2de-4605-a32a-732fee30836e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/ser/algorithm/ClosestNeighborTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/independentSet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/independentSet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/AlgorithmZ.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/AlgorithmZ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/EdgeSelection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/EdgeSelection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Flow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Flow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/FlowGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/FlowGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/GreedyEdges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/GreedyEdges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Incremental.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Incremental.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Neighbor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Neighbor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Triplet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/Triplet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/ZeroFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/ZeroFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/collections/EdgesHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/collections/EdgesHeap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/com/ser/exception/AlgorithmNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/com/ser/exception/AlgorithmNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/com/ser/util/FileUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/com/ser/util/FileUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/BooleanEdges$BooleanReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/BooleanEdges$BooleanReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/BooleanEdges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/BooleanEdges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/GraphReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/GraphReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/NumericEdges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/graph/NumericEdges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/time/StopWatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/time/StopWatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/IndependentSet/com/ser/graph/EdgesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/IndependentSet/com/ser/graph/GraphTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/IndependentSet/com/ser/graph/GraphTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/IndependentSet/com/ser/graph/NodeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/IndependentSet/com/ser/graph/NodeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClosestNeighborTest">
+  <component name="RunManager" selected="JUnit.ClosestNeighborTest.testGraph019">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -240,23 +213,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlgorithmZTest.testGraph001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="independentSet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ser.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ser.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.AlgorithmZTest" />
-      <option name="METHOD_NAME" value="testGraph001" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ClosestNeighborTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="independentSet" />
       <extension name="coverage">
@@ -273,7 +229,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClosestNeighborTest.testGraph001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClosestNeighborTest.testGraph019" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="independentSet" />
       <extension name="coverage">
         <pattern>
@@ -283,14 +239,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ser.algorithm" />
       <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
-      <option name="METHOD_NAME" value="testGraph001" />
+      <option name="METHOD_NAME" value="testGraph019" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClosestNeighborTest.testGraph002" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClosestNeighborTest.testGraph020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="independentSet" />
       <extension name="coverage">
         <pattern>
@@ -300,14 +256,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ser.algorithm" />
       <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
-      <option name="METHOD_NAME" value="testGraph002" />
+      <option name="METHOD_NAME" value="testGraph020" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClosestNeighborTest.testGraph021" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="independentSet" />
       <extension name="coverage">
         <pattern>
@@ -316,8 +272,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ser.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.TriangleTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
+      <option name="METHOD_NAME" value="testGraph021" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClosestNeighborTest.testGraph022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="independentSet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ser.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ser.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
+      <option name="METHOD_NAME" value="testGraph022" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -383,19 +357,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TriangleTest" />
-      <item itemvalue="JUnit.AlgorithmZTest.testGraph001" />
       <item itemvalue="JUnit.ClosestNeighborTest" />
-      <item itemvalue="JUnit.ClosestNeighborTest.testGraph001" />
-      <item itemvalue="JUnit.ClosestNeighborTest.testGraph002" />
+      <item itemvalue="JUnit.ClosestNeighborTest.testGraph019" />
+      <item itemvalue="JUnit.ClosestNeighborTest.testGraph022" />
+      <item itemvalue="JUnit.ClosestNeighborTest.testGraph020" />
+      <item itemvalue="JUnit.ClosestNeighborTest.testGraph021" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClosestNeighborTest.testGraph019" />
+        <item itemvalue="JUnit.ClosestNeighborTest.testGraph022" />
+        <item itemvalue="JUnit.ClosestNeighborTest.testGraph021" />
+        <item itemvalue="JUnit.ClosestNeighborTest.testGraph020" />
         <item itemvalue="JUnit.ClosestNeighborTest" />
-        <item itemvalue="JUnit.ClosestNeighborTest.testGraph002" />
-        <item itemvalue="JUnit.ClosestNeighborTest.testGraph001" />
-        <item itemvalue="JUnit.AlgorithmZTest.testGraph001" />
-        <item itemvalue="JUnit.TriangleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -508,8 +482,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="192" />
+          <line>96</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
