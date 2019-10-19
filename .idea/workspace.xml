@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="184c12b9-b2de-4605-a32a-732fee30836e" name="Default" comment="Well it works except&#10;19 - Had out of memory but printing out i have been able to get the right answer&#10;20 - i have only seen an answer of 23. But there are lots of combinations.">
+      <change afterPath="$PROJECT_DIR$/graphs/graph023.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ser/algorithm/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/ser/algorithm/TreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/ClosetNeighbor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/ClosetNeighbor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/EdgeSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IndependentSet/com/ser/algorithm/EdgeSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ser/algorithm/ClosetNeighbor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +85,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/graphs" />
     <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -94,14 +94,21 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.ser.graph" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ser.algorithm" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ser.algorithm" />
+      <recent name="com.ser.algorithm.com.ser.algorithm.helper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bradley\OneDrive\Documents\GitHub\CheckbookApp\independentSet\graphs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -116,7 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClosestNeighborTest">
+  <component name="RunManager" selected="JUnit.TreeTest.testGraph020">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -215,7 +222,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClosestNeighborTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="independentSet" />
       <extension name="coverage">
         <pattern>
@@ -224,14 +231,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ser.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.TreeTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClosestNeighborTest.testGraph019" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeTest.testGraph020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="independentSet" />
       <extension name="coverage">
         <pattern>
@@ -240,24 +247,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ser.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
-      <option name="METHOD_NAME" value="testGraph019" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClosestNeighborTest.testGraph020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="independentSet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ser.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ser.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.TreeTest" />
       <option name="METHOD_NAME" value="testGraph020" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -265,7 +255,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClosestNeighborTest.testGraph021" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeTest.testGraph021" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="independentSet" />
       <extension name="coverage">
         <pattern>
@@ -274,7 +264,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ser.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.TreeTest" />
       <option name="METHOD_NAME" value="testGraph021" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -282,7 +272,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClosestNeighborTest.testGraph022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TreeTest.testGraph022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="independentSet" />
       <extension name="coverage">
         <pattern>
@@ -291,8 +281,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ser.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.ClosestNeighborTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.TreeTest" />
       <option name="METHOD_NAME" value="testGraph022" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeTest.testGraph023" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="independentSet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ser.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ser.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="com.ser.algorithm.TreeTest" />
+      <option name="METHOD_NAME" value="testGraph023" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -359,19 +366,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ClosestNeighborTest" />
-      <item itemvalue="JUnit.ClosestNeighborTest.testGraph019" />
-      <item itemvalue="JUnit.ClosestNeighborTest.testGraph022" />
-      <item itemvalue="JUnit.ClosestNeighborTest.testGraph020" />
-      <item itemvalue="JUnit.ClosestNeighborTest.testGraph021" />
+      <item itemvalue="JUnit.TreeTest" />
+      <item itemvalue="JUnit.TreeTest.testGraph021" />
+      <item itemvalue="JUnit.TreeTest.testGraph022" />
+      <item itemvalue="JUnit.TreeTest.testGraph020" />
+      <item itemvalue="JUnit.TreeTest.testGraph023" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClosestNeighborTest" />
-        <item itemvalue="JUnit.ClosestNeighborTest.testGraph019" />
-        <item itemvalue="JUnit.ClosestNeighborTest.testGraph022" />
-        <item itemvalue="JUnit.ClosestNeighborTest.testGraph021" />
-        <item itemvalue="JUnit.ClosestNeighborTest.testGraph020" />
+        <item itemvalue="JUnit.TreeTest.testGraph020" />
+        <item itemvalue="JUnit.TreeTest.testGraph023" />
+        <item itemvalue="JUnit.TreeTest.testGraph022" />
+        <item itemvalue="JUnit.TreeTest.testGraph021" />
+        <item itemvalue="JUnit.TreeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -502,11 +509,26 @@
           <line>35</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ser/algorithm/Tree.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ser/algorithm/Tree.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IndependentSet$TreeTest_testGraph020.ic" NAME="TreeTest.testGraph020 Coverage Results" MODIFIED="1570836063943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ser.algorithm.*</FILTER>
+    </SUITE>
   </component>
 </project>
